@@ -1,183 +1,80 @@
-# tala-de-login-da-mama
+# tala-de-login-da-mazinha
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Músicas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .genre {
-            background-color: white;
-            border-radius: 5px;
-            margin: 10px;
-            width: 250px;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .genre h3 {
-            font-size: 18px;
-            color: #333;
-        }
-
-        .genre ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .genre li {
-            margin: 8px 0;
-            color: #555;
-        }
-    </style>
+    <title>Estilos Musicais</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Estilos Musicais</h1>
+    </header>
 
-<header>
-    <h1>Site de Músicas</h1>
-</header>
+    <div class="container">
+        <div class="genre">
+            <img src="sertanejo.jpg" alt="Sertanejo">
+            <h2>Sertanejo</h2>
+            <p>O Sertanejo é um dos estilos mais populares no Brasil, com raízes na música caipira.</p>
+        </div>
 
-<nav>
-    <a href="#blues">Blues</a>
-    <a href="#country">Country</a>
-    <a href="#funk">Funk</a>
-    <a href="#hiphop">Hip-Hop</a>
-    <a href="#jazz">Jazz</a>
-    <a href="#pop">Pop</a>
-    <a href="#rock">Rock</a>
-    <a href="#samba">Samba</a>
-    <a href="#soul">Soul</a>
-    <a href="#world">World Music</a>
-</nav>
+        <div class="genre">
+            <img src="funk.jpg" alt="Funk">
+            <h2>Funk</h2>
+            <p>O Funk brasileiro surgiu nas favelas do Rio de Janeiro e tem batidas animadas e letras variadas.</p>
+        </div>
 
-<div class="container">
+        <div class="genre">
+            <img src="mpb.jpg" alt="MPB">
+            <h2>MPB</h2>
+            <p>Música Popular Brasileira, um estilo que mistura ritmos regionais e letras poéticas.</p>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-    <div class="genre" id="blues">
-        <h3>Blues</h3>
-        <ul>
-            <li>The Thrill is Gone - B.B. King</li>
-            <li>Pride and Joy - Stevie Ray Vaughan</li>
-            <li>Crossroads - Robert Johnson</li>
-        </ul>
-    </div>
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-    <div class="genre" id="country">
-        <h3>Country</h3>
-        <ul>
-            <li>Jolene - Dolly Parton</li>
-            <li>Take Me Home, Country Roads - John Denver</li>
-            <li>Ring of Fire - Johnny Cash</li>
-        </ul>
-    </div>
+h1 {
+    margin: 0;
+}
 
-    <div class="genre" id="funk">
-        <h3>Funk</h3>
-        <ul>
-            <li>Superstition - Stevie Wonder</li>
-            <li>Get Up (I Feel Like Being A) Sex Machine - James Brown</li>
-            <li>Give Up the Funk - Parliament</li>
-        </ul>
-    </div>
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
 
-    <div class="genre" id="hiphop">
-        <h3>Hip-Hop</h3>
-        <ul>
-            <li>Juicy - The Notorious B.I.G.</li>
-            <li>Lose Yourself - Eminem</li>
-            <li>Fight the Power - Public Enemy</li>
-        </ul>
-    </div>
+.genre {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-    <div class="genre" id="jazz">
-        <h3>Jazz</h3>
-        <ul>
-            <li>So What - Miles Davis</li>
-            <li>Take Five - Dave Brubeck</li>
-            <li>Feeling Good - Nina Simone</li>
-        </ul>
-    </div>
+.genre img {
+    width: 100%;
+    border-radius: 8px;
+}
 
-    <div class="genre" id="pop">
-        <h3>Pop</h3>
-        <ul>
-            <li>Shape of You - Ed Sheeran</li>
-            <li>Blinding Lights - The Weeknd</li>
-            <li>Uptown Funk - Mark Ronson ft. Bruno Mars</li>
-        </ul>
-    </div>
+.genre h2 {
+    margin: 10px 0;
+    font-size: 20px;
+}
 
-    <div class="genre" id="rock">
-        <h3>Rock</h3>
-        <ul>
-            <li>Bohemian Rhapsody - Queen</li>
-            <li>Stairway to Heaven - Led Zeppelin</li>
-            <li>Smells Like Teen Spirit - Nirvana</li>
-        </ul>
-    </div>
-
-    <div class="genre" id="samba">
-        <h3>Samba</h3>
-        <ul>
-            <li>Aquarela do Brasil - Ary Barroso</li>
-            <li>Mas Que Nada - Jorge Ben Jor</li>
-            <li>O Mundo é um Moinho - Cartola</li>
-        </ul>
-    </div>
-
-    <div class="genre" id="soul">
-        <h3>Soul</h3>
-        <ul>
-            <li>Respect - Aretha Franklin</li>
-            <li>What's Going On - Marvin Gaye</li>
-            <li>A Change Is Gonna Come - Sam Cooke</li>
-        </ul>
-    </div>
-
-    <div class="genre" id="world">
-        <h3>World Music</h3>
-        <ul>
-            <li>Pata Pata - Miriam Makeba</li>
-            <li>Waka Waka - Shakira</li>
-            <li>Desert Rose - Sting ft. Cheb Mami</li>
-        </ul>
-    </div>
-
-</div>
-
-</body>
-</html>
+.genre p {
+    color: #555;
+}
