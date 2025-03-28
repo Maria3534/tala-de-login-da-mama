@@ -1,80 +1,122 @@
 # tala-de-login-da-mazinha
 
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estilos Musicais</title>
+    <title>Todos os Gêneros Musicais</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Estilos Musicais</h1>
+        <h1>🎵 Todos os Gêneros Musicais 🎶</h1>
     </header>
 
-    <div class="container">
-        <div class="genre">
-            <img src="sertanejo.jpg" alt="Sertanejo">
-            <h2>Sertanejo</h2>
-            <p>O Sertanejo é um dos estilos mais populares no Brasil, com raízes na música caipira.</p>
-        </div>
-
-        <div class="genre">
-            <img src="funk.jpg" alt="Funk">
+    <main>
+        <section class="genre">
             <h2>Funk</h2>
-            <p>O Funk brasileiro surgiu nas favelas do Rio de Janeiro e tem batidas animadas e letras variadas.</p>
-        </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Funk_Music.jpg" alt="Funk Music">
+            <audio controls>
+                <source src="musica-funk.mp3" type="audio/mpeg">
+            </audio>
+        </section>
 
-        <div class="genre">
-            <img src="mpb.jpg" alt="MPB">
-            <h2>MPB</h2>
-            <p>Música Popular Brasileira, um estilo que mistura ritmos regionais e letras poéticas.</p>
-        body {
+        <section class="genre">
+            <h2>Jazz</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Jazz_Band.jpg" alt="Jazz Music">
+            <audio controls>
+                <source src="musica-jazz.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section class="genre">
+            <h2>Rock</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Rock_Band.jpg" alt="Rock Music">
+            <audio controls>
+                <source src="musica-rock.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section class="genre">
+            <h2>Pop</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Pop_Music.jpg" alt="Pop Music">
+            <audio controls>
+                <source src="musica-pop.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section class="genre">
+            <h2>Hip-Hop</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Hip_Hop.jpg" alt="Hip-Hop Music">
+            <audio controls>
+                <source src="musica-hiphop.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section class="genre">
+            <h2>Clássica</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Classical_Music.jpg" alt="Classical Music">
+            <audio controls>
+                <source src="musica-classica.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section class="genre">
+            <h2>Reggae</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Reggae_Music.jpg" alt="Reggae Music">
+            <audio controls>
+                <source src="musica-reggae.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section class="genre">
+            <h2>Eletrônica</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Electronic_Music.jpg" alt="Electronic Music">
+            <audio controls>
+                <source src="musica-eletronica.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Todos os Gêneros Musicais</p>
+    </footer>
+</body>
+</html>
+body {
     font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #222;
-    color: white;
-    text-align: center;
+    background-color: #1db954;
     padding: 20px;
-}
-
-h1 {
-    margin: 0;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .genre {
-    background: white;
-    margin: 15px;
+    background: #1e1e1e;
+    margin: 20px auto;
     padding: 15px;
-    width: 300px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
 }
 
 .genre img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-.genre h2 {
-    margin: 10px 0;
-    font-size: 20px;
-}
-
-.genre p {
-    color: #555;
+footer {
+    background-color: #1db954;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
