@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>🎵 Todos os Gêneros Musicais 🎶</h1>
+        <h1>🎵 GroovePlay 🎶</h1>
     </header>
 
     <main>
