@@ -1,0 +1,41 @@
+Para criar imagens no HTML, você pode usar a tag `<img>`, que é usada para incorporar imagens em páginas web. Aqui está a estrutura básica de como usá-la:
+
+### Exemplo básico:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Imagem</title>
+</head>
+<body>
+
+    <h1>Minha Página com Imagem</h1>
+    <img src="caminho/para/a/imagem.jpg" alt="Descrição da imagem" width="500" height="300">
+
+</body>
+</html>
+```
+
+### Explicação:
+- **`<img>`**: Tag usada para inserir uma imagem.
+- **`src`**: Atributo que define o caminho da imagem. Pode ser um caminho relativo ou absoluto.
+- **`alt`**: Atributo que fornece uma descrição alternativa da imagem, útil para acessibilidade e caso a imagem não carregue.
+- **`width` e `height`**: Atributos que controlam o tamanho da imagem (em pixels).
+
+#### Exemplos de como usar a tag `<img>`:
+- **Imagem local**: Se a imagem estiver na mesma pasta do arquivo HTML, basta usar o nome da imagem.
+  
+  ```html
+  <img src="minha-imagem.jpg" alt="Descrição da imagem">
+  ```
+
+- **Imagem de URL**: Se a imagem estiver hospedada na web, use a URL completa.
+
+  ```html
+  <img src="https://www.exemplo.com/imagem.jpg" alt="Imagem da web">
+  ```
+
+Se precisar de algo mais avançado, como imagens responsivas, ou imagens com links, posso te ajudar também!
